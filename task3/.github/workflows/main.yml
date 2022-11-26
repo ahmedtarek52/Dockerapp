@@ -24,4 +24,5 @@ jobs:
 
       - name: 'Pushing image to dockerHup'
         run: docker push  ${{ secrets.DOCKER_USERNAME }}/my-java-app  
+        
 
