@@ -1,0 +1,19 @@
+on:
+ push:
+  branches:
+   - master
+
+
+
+
+jobs:
+ build:
+  runs-on: ubuntu-latest
+
+
+  steps:
+   - uses: actions/checkout@v3
+
+   - name: "login to dockerhup"
+     run: docker login --username ahmedtarek22 --password dckr_pat_tBJWJQQZLqopeO3vp1pwcyJHw9g
+
